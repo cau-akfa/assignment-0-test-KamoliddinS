@@ -15,16 +15,11 @@
 #include <string>
 #include <algorithm>
 
-std::string ReverseString(const std::string& input) {
-    std::string reversed = input;
-    std::reverse(reversed.begin(), reversed.end());
-    return reversed;
-}
-
 int main() {
     std::string input;
-    std::getline(std::cin, input); // Read the entire line of input, including spaces
-    std::string reversed = ReverseString(input);
-    std::cout << reversed << std::endl;
+    while(std::getline(std::cin, input)) {
+        std::reverse(input.begin(), input.end());
+        std::cout << input << std::endl;
+    }
     return 0;
 }
