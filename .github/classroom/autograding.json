@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "test1",
+      "setup": "make all ",
+      "run": "make test ",
+      "input": "ali\r\nbali",
+      "output": "ila\r\nilab",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
